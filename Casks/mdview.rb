@@ -1,6 +1,6 @@
 cask "mdview" do
   version "0.1.0"
-  sha256 "cb7ef43ca3b93eed8453ed84d59e11ab2d8c68a3cc610188be68901e06ca5816"
+  sha256 "4491b78e5fe9873e9123dbb6d6755ce0e0d7b36f40ad45c89fd6ba6fce7b0152"
 
   url "https://github.com/tvaisanen/markdownviewer/releases/download/v#{version}/MarkdownViewer.zip"
   name "MarkdownViewer"
