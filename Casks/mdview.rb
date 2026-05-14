@@ -2,10 +2,10 @@ cask "mdview" do
   version "0.3.0"
   sha256 "2ae8fe61ac3e9a3be23b8cbdaff97bace833fdcd4945b9d8196bc2b9c6570eef"
 
-  url "https://github.com/slantedt/markdownviewer/releases/download/v#{version}/MarkdownViewer.zip"
+  url "https://github.com/slantedt/sigla-dist/releases/download/v#{version}/MarkdownViewer.zip"
   name "MarkdownViewer"
   desc "Markdown viewer for macOS with Mermaid diagram support"
-  homepage "https://github.com/slantedt/markdownviewer"
+  homepage "https://github.com/slantedt/sigla-dist"
 
   depends_on macos: ">= :sonoma"
 
@@ -13,7 +13,7 @@ cask "mdview" do
 
   postflight do
     # Install mdview CLI from release
-    mdview_url = "https://github.com/slantedt/markdownviewer/releases/download/v#{version}/mdview"
+    mdview_url = "https://github.com/slantedt/sigla-dist/releases/download/v#{version}/mdview"
     binary_path = "#{HOMEBREW_PREFIX}/bin/mdview"
     system_command "curl", args: ["-fsSL", "-o", binary_path, mdview_url]
     system_command "chmod", args: ["+x", binary_path]
