@@ -1,6 +1,6 @@
 cask "mdview" do
-  version "0.3.4"
-  sha256 "0b914f57d08d41cb679c7c057094082b8172368961d9ebc9677c98c35ba43301"
+  version "0.3.5"
+  sha256 "bb5ec7c81c6cc5d0b625ae764b0dd9c4037732097fde166743df2e9a0703637d"
 
   url "https://github.com/slantedt/sigla-dist/releases/download/v#{version}/MarkdownViewer.zip"
   name "MarkdownViewer"
